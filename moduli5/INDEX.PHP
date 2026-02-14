@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
-        <tr border="1">
+    <table border="1">
+        <tr >
             <th>phone</th>
             <th>in stock</th>
             <th>sold</th>
@@ -26,6 +26,14 @@ echo $dogs[0][0]. " orgin: ". $dogs[0][1]. "life span:". $dogs [0][2]."<hr>";
 echo $dogs[1][0]. " orgin: ". $dogs[1][1]. "life span:". $dogs [1][2]."<hr>";
 echo $dogs[2][0]. " orgin: ". $dogs[2][1]. "life span:". $dogs [2][2]."<hr>";
 
+    for($x = 0; $x<3; $x++){
+        echo "<ul>";
+        for($y = 0; $y<3; $y++){
+            echo "<li>".$dogs[$x][$y]."</li>";
+        }
+        echo "</ul>";
+    }
+
 
 $phones = [
     ["iphone 15", 20,15],
@@ -42,5 +50,18 @@ for($row = 0; $row<3; $row++){
     echo "</tr>";
 }
 echo "</table>";
+
+
+$grades = [
+    "matematike" => "3",
+    "biologji" => "2",
+    "histori" => "5",
+    "muzik" => "4"
+];
+
+echo "math grade is ".$grades["matematike"]."<hr>";
+echo "bio grade is ".$grades["biologji"]."<hr>";
+echo "histori grade is ".$grades["histori"]."<hr>";
+echo "music grade is ".$grades["muzik"]."<hr>";
 
 ?>
