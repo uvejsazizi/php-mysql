@@ -1,12 +1,12 @@
 <?php
 $host = 'localhost';
-$db = 'chalange';
+$db = 'movie';
 $username = 'root';
 $password = '';
 
 try{
     $conn = new PDO("mysql:host=$host;dbname=$db", $username, $password);
-    echo ("sucsesfull");
+    // Connection successful
 }
 catch(PDOException $e){
     echo("Connection failed");
