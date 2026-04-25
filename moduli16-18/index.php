@@ -65,9 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding-top: 60px; /* Space for navbar */
             overflow-x: hidden;
         }
 
@@ -329,6 +327,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </style>
 </head>
 <body>
+    <?php include 'navbar.php'; ?>
     <div class="signup-container">
         <div class="signup-header">
             <h1>Create Account</h1>
@@ -459,5 +458,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             });
         });
     </script>
+    <?php include 'footer.php'; ?>
 </body>
 </html>
